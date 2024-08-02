@@ -11,7 +11,8 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
     display: flex;
     font-family:"fira_sansregular";
 
@@ -22,6 +23,7 @@ body {
     display: flex;
     width: 100%;
     height: 100vh;
+    height: 100%;
     align-items: stretch;
     overflow-y: auto;
 }
@@ -55,7 +57,7 @@ body {
 }
 
 form {
-    padding-left: 40px;
+    padding-left: 0px;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -85,9 +87,9 @@ h2 {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* flex: 1; */
-    justify-content: center;
-    flex-shrink: 2;
+    flex: 1;
+    justify-content: space-around;
+    /* flex-shrink: 2; */
   
 }
 
@@ -109,8 +111,9 @@ input {
 
 .row {
     display: flex;
-    justify-content:space-evenly;
+    justify-content:left;
     margin-bottom: 15px;
+    padding-left: 40px;
 }
 
 .input-row {
@@ -130,12 +133,13 @@ input {
 
 .submit-button, .submit-text {
     padding-left: 40px;
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
     flex: 1;
 }
 
 .submit-button {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin-top: 5%;
 }
 
 
@@ -153,8 +157,11 @@ button {
     outline: 0;
     padding: 10px 25px;
     text-align: center;
+    width: 22vh;
 
 }
+
+
 
 input:invalid {
     border: 1px solid red;
@@ -181,4 +188,32 @@ input:valid {
 
 a {
     color: white;
+}
+
+p>a {
+    color: #f1ac44;
+
+}
+
+.logo-section {
+    background-color: black;
+    opacity: 0.5;
+    margin-top: 20vh;
+    /* margin-bottom: 40vh; */
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 20vh;
+}
+
+img {
+    max-height: 18vh;
+}
+
+.TD {
+    font-size: 13vh;
+    color:  #f1ac44;;
+
 }
