@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'fira_sansregular';
+    src: url('font/firasans-regular.woff2') format('woff2'),
+         url('font/firasans-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'fira_sansbook';
+    src: url('font/firasans-book.woff2') format('woff2'),
+         url('font/firasans-book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'fira_sansbook_italic';
+    src: url('font/firasans-bookitalic.woff2') format('woff2'),
+         url('font/firasans-bookitalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

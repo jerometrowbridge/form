@@ -6,65 +6,70 @@
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
-<!-- background photo attribution: Photo by <a href="https://unsplash.com/@justzht?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Haotian Zheng</a> on <a href="https://unsplash.com/photos/a-person-walking-on-a-beach-next-to-the-ocean-0OgCNRPHpok?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
--->
 <body>
 
     <!-- Adding container for divs -->
      <div class="container">
-        <div class="left-side"></div>
+        <div class="left-side">
+            <div class="left-text"> 
+                Photo by <a href="https://unsplash.com/@justzht?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Haotian Zheng</a> on <a href="https://unsplash.com/photos/a-person-walking-on-a-beach-next-to-the-ocean-0OgCNRPHpok?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+            </div>
+        </div>
         <div class="right-side">
         <div class="text-above">
-            <p>Do you dream in orange? If you're like us, your dreams are filled with tangerines. Create an account
-                so you can schedule your free consultation!
+            <p><h1>Do you dream in orange? If you're like us, your dreams are filled with tangerines. 
             </p>
             <p>
-                You deserve to treat yourself!
+                Don't you want to dream of tangerines, too?
+            </h1>
             </p>
         </div>
     
             <!-- creating form -->
      <div class="form">
-        <p class="text-inside-form">Sign up for Tangerine Dreams!</p>
+        <p class="text-inside-form"> <h2>Join the family!</h2></p>
     <form action="/fakeurl" method="post">
         <!-- <fieldset>
             <legend>Let's do this!</legend> -->
         <div class="row">
             <div class="input-row">
-                <label id="firstName"> FIRST NAME
-                    <input type="text" name="firstName">
+                <label id="firstName"> First Name*
+                    <input type="text" name="firstName" minlength="2" maxlength="20" placeholder="first" required>
                 </label>
             </div>
             <div class="input-row">
-                <label id="lastName"> LAST NAME
-                    <input type="text" name="lastName">
+                <label id="lastName"> Last Name*
+                    <input type="text" name="lastName" minlength="2" maxlength="20" placeholder="last" required>
                 </label>
             </div>
         </div>
         <div class="row">
             <div class="input-row">
-                <label id="email"> EMAIL
-                    <input type="email" name="email">
+                <label id="email"> Email*
+                    <input type="email" name="email" placeholder="tangerine@dreams.com" required>
                 </label>
             </div>
             <div class="input-row">
-                <label id="telephone"> PHONE NUMBER
-                    <input type="tel" name="telephone">
+                <label id="telephone"> Phone Number
+                    <input type="tel" name="telephone" placeholder="123-456-7890" pattern="[789][0-9]{9}">
                 </label>
             </div>
         </div>
         <div class="row">
             <div class="input-row">
-                <label id="pwd"> PASSWORD
-                    <input type="password" name="pwd">
+                <label id="pwd"> Password*
+                    <input type="password" name="pwd" required>
                 </label>
             </div>
             <div class="input-row">
-                <label id="pwdConfirm"> CONFIRM PASSWORD
-                    <input type="password" name="pwdConfirm">
+                <label id="pwdConfirm"> Confirm Password*
+                    <input type="password" name="pwdConfirm" required>
                 </label>
             </div>
+           
         </div>
+        <p class="bottom-form-text">Fields marked with "*" are required.</p>
     <!-- </fieldset> -->
     </div>
         <div class="createAccount">
