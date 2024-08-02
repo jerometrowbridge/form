@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -34,20 +35,20 @@
             <legend>Let's do this!</legend> -->
         <div class="row">
             <div class="input-row">
-                <label id="firstName"> First Name*
-                    <input type="text" name="firstName" minlength="2" maxlength="20" placeholder="first" required>
+                <label id="firstName"> First Name
+                    <input type="text" name="firstName" minlength="2" maxlength="20" placeholder="first" >
                 </label>
             </div>
             <div class="input-row">
-                <label id="lastName"> Last Name*
-                    <input type="text" name="lastName" minlength="2" maxlength="20" placeholder="last" required>
+                <label id="lastName"> Last Name
+                    <input type="text" name="lastName" minlength="2" maxlength="20" placeholder="last" >
                 </label>
             </div>
         </div>
         <div class="row">
             <div class="input-row">
-                <label id="email"> Email*
-                    <input type="email" name="email" placeholder="tangerine@dreams.com" required>
+                <label id="email"> Email
+                    <input type="email" name="email" placeholder="tangerine@dreams.com" >
                 </label>
             </div>
             <div class="input-row">
@@ -59,18 +60,17 @@
         <div class="row">
             <div class="input-row">
                 <label id="pwd"> Password*
-                    <input type="password" name="pwd" required>
+                    <input type="password" name="pwd" id="password" onkeyup="check();" required>
                 </label>
+                <span id="message"></span>
             </div>
             <div class="input-row">
                 <label id="pwdConfirm"> Confirm Password*
-                    <input type="password" name="pwdConfirm" required>
+                    <input type="password" name="pwdConfirm" id="confirm_password" onkeyup="check();" required>
                 </label>
             </div>
            
         </div>
-        <p class="bottom-form-text">Fields marked with "*" are required.</p>
-    <!-- </fieldset> -->
     </div>
         <div class="createAccount">
             <p>
